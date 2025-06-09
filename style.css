@@ -1,0 +1,64 @@
+/* Skip to main link (only visible when focused) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  background: yellow;
+  color: black;
+  padding: 10px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+}
+
+/* Navigation with flex and style */
+.nav {
+  display: flex;
+  gap: 15px;
+  background-color: #333;
+  padding: 10px;
+  justify-content: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #ffd700;
+}
+
+/* Style all images */
+img {
+  border: 3px solid #555;
+  padding: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Gallery with grid */
+.grid-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* nth-child styling for gallery */
+.grid-gallery img:nth-child(even) {
+  border-radius: 50px;
+}
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
